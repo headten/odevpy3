@@ -1,0 +1,39 @@
+a = input("programa hoşgeldiniz. devam etmek için bir tuşa basın ...")
+işlem = input("İşlem türünü seçiniz. +   -   x   /   %(mod alma işlemidir.) ")
+sonuc = 0
+while True :
+    sayi = input("Sayı giriniz... Çıkmak için  'q' tuşunu kullanın... ")
+
+    if(sayi == "q" ):
+        print("program sonlandırılıyor...")
+        break
+    sayi = int(sayi)
+
+    if işlem == "+":
+        sonuc += sayi
+        print (sonuc)
+    elif işlem == "-":
+        sonuc -= sayi
+        print (sonuc)
+    elif işlem == "x":
+        while True :
+            print("Yeni sayılar giriniz...")
+            b = (input("Sayı veya q : "))
+            if b == "q":
+                break
+            b = int(b)
+            if sayi  == 0:
+                sayi =     int (input("sayıyı değiştiriniz..."))
+                sonuc += sayi
+                sonuc *= b
+                print (sonuc)
+            elif sayi and b  == int():
+                sonuc += sayi
+                sonuc *= b
+                print(sonuc)
+            else:
+                break
+                
+                
+                ******************************************* Çarpmada sıkıntı çıktı ***************************************
+
